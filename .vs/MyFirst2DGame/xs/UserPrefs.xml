@@ -1,0 +1,49 @@
+﻿<Properties StartupConfiguration="{D3984021-5E51-272C-899B-5E88C3B5EC9A}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/FinalProject/Script_Action/LoadLevelAction.cs">
+    <Files>
+      <File FileName="Assets/Courses/PickUpGenerator.cs" Line="11" Column="30" />
+      <File FileName="Assets/Courses/PickUpController.cs" Line="36" Column="1" />
+      <File FileName="Assets/Courses/UFOController_Phy.cs" Line="63" Column="1" />
+      <File FileName="Assets/ScoreManager.cs" Line="36" Column="20" />
+      <File FileName="Assets/Courses/SoundManager.cs" Line="15" Column="31" />
+      <File FileName="Assets/Script_Homework3/ResizeAction.cs" Line="5" Column="26" />
+      <File FileName="Assets/Courses/UFOController.cs" Line="14" Column="1" />
+      <File FileName="Assets/Courses/CameraController.cs" Line="13" Column="3" />
+      <File FileName="Assets/Script_Movement/MovementMoveNormal.cs" Line="23" Column="29" />
+      <File FileName="Assets/Script_Movement/MovementCameraFollow.cs" Line="12" Column="6" />
+      <File FileName="Assets/Script_Movement/MovementJump.cs" Line="5" Column="1" />
+      <File FileName="Assets/Script_Condition/Condition_MouseClick.cs" Line="5" Column="1" />
+      <File FileName="Assets/Script_Action/Collectable_Action.cs" Line="32" Column="1" />
+      <File FileName="Assets/Script_Action/LoadLevelAction.cs" Line="6" Column="38" />
+      <File FileName="Assets/ResizActionPractice.cs" Line="46" Column="46" />
+      <File FileName="Assets/FinalProject/Script_Condition/Condition_MouseClick.cs" Line="6" Column="36" />
+      <File FileName="Assets/FinalProject/Script_Action/LoadLevelAction.cs" Line="17" Column="4" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MyFirst2DGame" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Courses" expanded="True">
+                <Node name="Script_Homework3" expanded="True" />
+              </Node>
+              <Node name="FinalProject" expanded="True">
+                <Node name="Script_Action" expanded="True">
+                  <Node name="LoadLevelAction.cs" selected="True" />
+                </Node>
+                <Node name="Script_Condition" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="4216f200-827b-4adf-872d-b1feecaf6a07" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

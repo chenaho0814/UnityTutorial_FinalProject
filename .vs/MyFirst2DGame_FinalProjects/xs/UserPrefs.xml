@@ -1,0 +1,51 @@
+﻿<Properties StartupConfiguration="{9A37DBEB-C902-9D2F-4AB8-D362880F2AE3}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Courses/CH11/SpawnAction.cs">
+    <Files>
+      <File FileName="Assets/Courses/UFOController.cs" Line="1" Column="1" />
+      <File FileName="Assets/UFOAnimation.cs" Line="13" Column="5" />
+      <File FileName="Assets/ScoreManager.cs" Line="28" Column="22" />
+      <File FileName="Assets/Courses/UFOController_Phy.cs" Line="56" Column="4" />
+      <File FileName="Assets/FinalProject/Script_Action/OnOffAction.cs" Line="12" Column="36" />
+      <File FileName="Assets/FinalProject/Script_Action/PlayAnimationAction.cs" Line="15" Column="1" />
+      <File FileName="Assets/FinalProject/Script_Action/Collectable_Action.cs" Line="14" Column="1" />
+      <File FileName="Assets/Courses/CH11/MouseDetectMove.cs" Line="4" Column="1" />
+      <File FileName="Assets/FinalProject/Script_Movement/MovementPatrol.cs" Line="10" Column="5" />
+      <File FileName="Assets/Courses/CH11/motionCameraShake.cs" Line="37" Column="35" />
+      <File FileName="Assets/DOTween Examples/CustomPlugin Example/CustomRange.cs" Line="1" Column="1" />
+      <File FileName="Assets/DOTween Examples/Follow.cs" Line="16" Column="46" />
+      <File FileName="Assets/Courses/CH10/Scavenger_AnimatorController.cs" Line="14" Column="36" />
+      <File FileName="Assets/Courses/CH11/SpawnAction.cs" Line="15" Column="21" />
+      <File FileName="Assets/FinalProject/Script_Action/CreateObjectAction.cs" Line="7" Column="35" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MyFirst2DGame_FinalProjects" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Courses" expanded="True">
+                <Node name="CH10" expanded="True" />
+                <Node name="CH11" expanded="True">
+                  <Node name="SpawnAction.cs" selected="True" />
+                </Node>
+              </Node>
+              <Node name="DOTween Examples" expanded="True">
+                <Node name="CustomPlugin Example" expanded="True" />
+              </Node>
+              <Node name="FinalProject" expanded="True">
+                <Node name="Script_Action" expanded="True" />
+                <Node name="Script_Movement" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="4216f200-827b-4adf-872d-b1feecaf6a07" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
