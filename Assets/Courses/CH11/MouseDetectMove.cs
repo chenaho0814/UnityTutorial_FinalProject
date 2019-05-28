@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
-
 public class MouseDetectMove : MonoBehaviour
 {
     private Vector2 mousePos;
@@ -21,9 +20,10 @@ public class MouseDetectMove : MonoBehaviour
     {
         Debug.Log("OnMouseDown");
         mousePos = Input.mousePosition;
-        screenPos = Camera.main.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, transform.position.z - Camera.main.transform.position.z));
+        screenPos = Camera.main.ScreenToWorldPoint(
+            new Vector3(mousePos.x, mousePos.y, transform.position.z - Camera.main.transform.position.z));
 
-        UFO.transform.DOMove(new Vector3(screenPos.x, screenPos.y, 0), 1);
-        //UFO.transform.DOMove( new Vector3( screenPos.x, screenPos.y , 0)  , 1 ).SetEase( Ease.InBounce );  // good reference http://robertpenner.com/easing/easing_demo.html
+        //UFO.transform.DOMove(new Vector3(screenPos.x, screenPos.y, 0), 1);
+        UFO.transform.DOMove( new Vector3( screenPos.x, screenPos.y , 0)  , 1 ).SetEase( Ease.InBounce );  // good reference http://robertpenner.com/easing/easing_demo.html
     }
 }
