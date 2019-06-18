@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Collectable_Action : Action
 {
-    public ScoreManager scoreManager; // used to report score Add
+    public GameRuleManager scoreManager; // used to report score Add
     public int nResourceNumber = 1;
 
 
@@ -15,7 +15,7 @@ public class Collectable_Action : Action
         if (scoreManager == null)
         {
 
-            scoreManager = GameObject.Find("ScoreManager").GetComponent<ScoreManager>();
+            scoreManager = GameObject.Find("ScoreManager").GetComponent<GameRuleManager>();
             if (scoreManager == null)
                 Debug.Log("please assign score system");
         }

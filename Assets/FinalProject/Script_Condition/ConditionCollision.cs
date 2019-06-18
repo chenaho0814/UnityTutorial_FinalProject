@@ -17,11 +17,12 @@ public class ConditionCollision : ConditionBase
 	void OnCollisionEnter2D(Collision2D collision)
 	{
 
-        Debug.Log("OnCollisionEnter2D:" + collision.gameObject.name);
+        Debug.Log("OnCollisionEnter2D:" + collision.gameObject.name +",To:" + gameObject.name);
 		if(collision.collider.CompareTag(filterTag)
 			|| !filterByTag)
 		{
-			ExecuteAllActions(collision.gameObject);
-		}
+			//ExecuteAllActions(collision.gameObject);
+            ExecuteAllActions(gameObject);
+        }
 	}
 }

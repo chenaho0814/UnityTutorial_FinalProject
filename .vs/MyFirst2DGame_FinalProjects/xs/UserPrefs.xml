@@ -1,13 +1,10 @@
 ﻿<Properties StartupConfiguration="{9A37DBEB-C902-9D2F-4AB8-D362880F2AE3}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Courses/CH11/SpawnAction.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/FinalProject/Common/GameRuleManager.cs">
     <Files>
-      <File FileName="Assets/Courses/UFOController.cs" Line="1" Column="1" />
       <File FileName="Assets/UFOAnimation.cs" Line="13" Column="5" />
-      <File FileName="Assets/ScoreManager.cs" Line="48" Column="38" />
-      <File FileName="Assets/Courses/UFOController_Phy.cs" Line="56" Column="4" />
       <File FileName="Assets/FinalProject/Script_Action/OnOffAction.cs" Line="12" Column="36" />
       <File FileName="Assets/FinalProject/Script_Action/PlayAnimationAction.cs" Line="15" Column="1" />
-      <File FileName="Assets/FinalProject/Script_Action/Collectable_Action.cs" Line="14" Column="1" />
+      <File FileName="Assets/FinalProject/Script_Action/Collectable_Action.cs" Line="30" Column="1" />
       <File FileName="Assets/Courses/CH11/MouseDetectMove.cs" Line="27" Column="103" />
       <File FileName="Assets/FinalProject/Script_Movement/MovementPatrol.cs" Line="10" Column="5" />
       <File FileName="Assets/Courses/CH11/motionCameraShake.cs" Line="25" Column="44" />
@@ -16,6 +13,19 @@
       <File FileName="Assets/Courses/CH10/Scavenger_AnimatorController.cs" Line="33" Column="42" />
       <File FileName="Assets/Courses/CH11/SpawnAction.cs" Line="40" Column="10" />
       <File FileName="Assets/FinalProject/Script_Action/CreateObjectAction.cs" Line="8" Column="1" />
+      <File FileName="Assets/DialogUI/DialogScript/DialogueBalloonAction.cs" Line="26" Column="36" />
+      <File FileName="Assets/DialogUI/DialogScript/DialogueSystem.cs" Line="1" Column="1" />
+      <File FileName="Assets/Slash_Prefab/SlashController.cs" Line="19" Column="34" />
+      <File FileName="Assets/Courses/UFOController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Courses/PickUpController.cs" Line="45" Column="2" />
+      <File FileName="Assets/Courses/UFOController_Phy.cs" Line="43" Column="23" />
+      <File FileName="Assets/FinalProject/Script_Condition/ConditionCollision.cs" Line="20" Column="46" />
+      <File FileName="Assets/HealthBarDisplay.cs" Line="31" Column="14" />
+      <File FileName="Assets/FinalProject/Script_Action/LoadLevelAction.cs" Line="8" Column="1" />
+      <File FileName="Assets/FinalProject/Common/LoadLevel.cs" Line="13" Column="30" />
+      <File FileName="Assets/FinalProject/Common/RunAssignActionOnStart.cs" Line="17" Column="6" />
+      <File FileName="Assets/FinalProject/Script_Utilities/Action.cs" Line="5" Column="29" />
+      <File FileName="Assets/FinalProject/Common/GameRuleManager.cs" Line="93" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -24,17 +34,24 @@
             <Node name="Assets" expanded="True">
               <Node name="Courses" expanded="True">
                 <Node name="CH10" expanded="True" />
-                <Node name="CH11" expanded="True">
-                  <Node name="SpawnAction.cs" selected="True" />
-                </Node>
+                <Node name="CH11" expanded="True" />
+              </Node>
+              <Node name="DialogUI" expanded="True">
+                <Node name="DialogScript" expanded="True" />
               </Node>
               <Node name="DOTween Examples" expanded="True">
                 <Node name="CustomPlugin Example" expanded="True" />
               </Node>
               <Node name="FinalProject" expanded="True">
+                <Node name="Common" expanded="True">
+                  <Node name="GameRuleManager.cs" selected="True" />
+                </Node>
                 <Node name="Script_Action" expanded="True" />
+                <Node name="Script_Condition" expanded="True" />
                 <Node name="Script_Movement" expanded="True" />
+                <Node name="Script_Utilities" expanded="True" />
               </Node>
+              <Node name="Slash_Prefab" expanded="True" />
             </Node>
           </Node>
         </State>

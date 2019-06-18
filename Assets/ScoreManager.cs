@@ -46,6 +46,9 @@ public class ScoreManager : MonoBehaviour {
                 motionCameraShake shake = GameObject.Find("motion_camerashaking").GetComponent<motionCameraShake>();
                 if (shake)
                     shake.MotionCameraShaking();
+
+
+                GameObject.Find("UFO").GetComponent<SpawnAction>().bTestFlag = true;
             }
                 
         }
