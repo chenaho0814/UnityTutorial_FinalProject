@@ -15,9 +15,11 @@ public class HealthBarDisplay : MonoBehaviour
     public int Max = 100;
 
 
-    public void SetHealth( int nHealth ) {
+    public void SetHealth( int nHealth , int HealthMax ) {
 
-        if(nHealth != nCurrentValue) { 
+        Max = HealthMax;
+
+        if (nHealth != nCurrentValue) { 
             if( Max - Min == 0) {
                 nCurrentValue = 0;
                 fCurrentPersent = 0; 
@@ -35,7 +37,7 @@ public class HealthBarDisplay : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SetHealth(90);
+        SetHealth(Max, Max);
 
 
     }

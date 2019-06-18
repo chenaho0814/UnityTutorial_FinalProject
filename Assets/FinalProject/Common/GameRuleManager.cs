@@ -36,11 +36,6 @@ public class GameRuleManager : MonoBehaviour
         //_text = this.GetComponent<Text>();
         text_DisplayScore.text = ScorePrefix + _currentScore;
 
-        //// open the game start panel 
-        //Panel_GameStart.SetActive(true);
-
-        //// close the game end panel 
-        //Panel_WinLoseUI.SetActive(false);
 
         for(int i = 0; i < GameObjectsToShowOnStart.Length; i++) {
             GameObjectsToShowOnStart[i].SetActive(true);
@@ -82,9 +77,19 @@ public class GameRuleManager : MonoBehaviour
         }
 
 
-
-
     }
+
+
+    public void SetWinDirectly() {
+        _currentScore = Score_Win;
+    }
+
+
+    public void SetLoseDirectly() {
+
+        _currentScore = Score_Lose;
+    }
+
 
     void CheckGameStatus()
     {

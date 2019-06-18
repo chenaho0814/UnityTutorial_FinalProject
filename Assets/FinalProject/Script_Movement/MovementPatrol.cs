@@ -1,14 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
-[RequireComponent(typeof(Rigidbody2D))]
+
 public class MovementPatrol : MonoBehaviour
 {
 
 
     [Header("Movement")]
-    public float speed = 5f;
+    public float Duration = 5f;
     public float directionChangeInterval = 3f;
 
     [Header("Orientation")]
@@ -19,13 +20,16 @@ public class MovementPatrol : MonoBehaviour
     [Header("Stops")]
     public Vector2[] waypoints;
 
+    public Ease MoveMode;
+
     private Vector2[] newWaypoints;
     private int currentTargetIndex;
-
+    private Sequence s;
 
     // Start is called before the first frame update
-    void Start()
+    IEnumerator Start()
     {
+    
 
         currentTargetIndex = 0;
 
@@ -33,44 +37,42 @@ public class MovementPatrol : MonoBehaviour
         int w = 0;
         for (int i = 0; i < waypoints.Length; i++)
         {
-            newWaypoints[i] = waypoints[i];
+            newWaypoints[i] =  new Vector2( transform.position.x + waypoints[i].x , transform.position.y + waypoints[i].y)   ;
             w = i;
         }
 
         //Add the starting position at the end, only if there is at least another point in the queue - otherwise it's on index 0
         int v = (newWaypoints.Length > 1) ? w + 1 : 0;
         newWaypoints[v] = transform.position;
-        //waypoints = newWaypoints;
+        waypoints = newWaypoints;
 
         if (orientToDirection)
         {
             Utils.SetAxisTowards(lookAxis, transform, ((Vector3)newWaypoints[1] - transform.position).normalized);
         }
 
-    }
+        // Start after one second delay (to ignore Unity hiccups when activating Play mode in Editor)
+        yield return new WaitForSeconds(1);
 
-    public void FixedUpdate()
-    {
-        Vector2 currentTarget = newWaypoints[currentTargetIndex];
+         s = DOTween.Sequence();
 
-        GetComponent<Rigidbody2D>().MovePosition(transform.position + ((Vector3)currentTarget - transform.position).normalized * speed * Time.fixedDeltaTime);
+        for (int i = 0; i < waypoints.Length; i++) {
 
-        if (Vector2.Distance(transform.position, currentTarget) <= .1f)
-        {
-            //new waypoint has been reached
-            currentTargetIndex = (currentTargetIndex < newWaypoints.Length - 1) ? currentTargetIndex + 1 : 0;
-            if (orientToDirection)
-            {
-                currentTarget = newWaypoints[currentTargetIndex];
-                Utils.SetAxisTowards(lookAxis, transform, ((Vector3)currentTarget - transform.position).normalized);
-            }
+            //if(i==0)
+            s.Append(transform.DOMove(newWaypoints[i], Duration).SetEase( Ease.Linear ) );
         }
+
+        s.SetLoops(-1, LoopType.Yoyo);
+
     }
 
-    public void Reset()
+    public void OnDestroy()
     {
-        waypoints = new Vector2[1];
-        Vector2 thisPosition = transform.position;
-        waypoints[0] = new Vector2(2f, .5f) + thisPosition;
+        // Kill the DoTween Animation before Destroy
+        Debug.Log("OnDestroy:" + gameObject.name);
+        s.Kill();
     }
+
+
+
 }
