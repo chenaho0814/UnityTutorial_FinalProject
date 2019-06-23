@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{9A37DBEB-C902-9D2F-4AB8-D362880F2AE3}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/FinalProject/Script_Attribute/HealthSystemAttribute.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Game_VisualGuess/SpriteMaskController.cs">
     <Files>
       <File FileName="Assets/Courses/UFOAnimation.cs" Line="13" Column="5" />
       <File FileName="Assets/FinalProject/Script_Action/OnOffAction.cs" Line="12" Column="36" />
@@ -25,13 +25,16 @@
       <File FileName="Assets/FinalProject/Script_Utilities/Action.cs" Line="5" Column="29" />
       <File FileName="Assets/FinalProject/Common/GameRuleManager.cs" Line="88" Column="36" />
       <File FileName="Assets/FinalProject/Script_Movement/Wander.cs" Line="26" Column="1" />
-      <File FileName="Assets/FinalProject/Script_Attribute/HealthSystemAttribute.cs" Line="25" Column="21" />
+      <File FileName="Assets/FinalProject/Script_Attribute/HealthSystemAttribute.cs" Line="25" Column="42" />
       <File FileName="Assets/FinalProject/Script_Attribute/ModifyHealthAttribute.cs" Line="15" Column="3" />
       <File FileName="Assets/DOTween Examples/Sequences.cs" Line="26" Column="26" />
       <File FileName="Assets/Courses/PickUpGenerator.cs" Line="57" Column="52" />
       <File FileName="Assets/FinalProject/Script_GamePlay/PrefabGenerator.cs" Line="36" Column="51" />
       <File FileName="Assets/FinalProject/Script_Movement/MovementPatrol.cs" Line="62" Column="64" />
       <File FileName="Assets/FinalProject/Script_Movement/MovementJump.cs" Line="43" Column="35" />
+      <File FileName="Assets/FinalProject/Script_Action/RunAssignActionOnStart.cs" Line="13" Column="26" />
+      <File FileName="Assets/FinalProject/Common_component/GameRuleManager/GameRuleManager.cs" Line="100" Column="10" />
+      <File FileName="Assets/Game_VisualGuess/SpriteMaskController.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -46,14 +49,18 @@
                 <Node name="CustomPlugin Example" expanded="True" />
               </Node>
               <Node name="FinalProject" expanded="True">
-                <Node name="Script_Action" expanded="True" />
-                <Node name="Script_Attribute" expanded="True">
-                  <Node name="HealthSystemAttribute.cs" selected="True" />
+                <Node name="Common_component" expanded="True">
+                  <Node name="GameRuleManager" expanded="True" />
                 </Node>
+                <Node name="Script_Action" expanded="True" />
+                <Node name="Script_Attribute" expanded="True" />
                 <Node name="Script_Condition" expanded="True" />
                 <Node name="Script_GamePlay" expanded="True" />
                 <Node name="Script_Movement" expanded="True" />
                 <Node name="Script_Utilities" expanded="True" />
+              </Node>
+              <Node name="Game_VisualGuess" expanded="True">
+                <Node name="SpriteMaskController.cs" selected="True" />
               </Node>
             </Node>
           </Node>
